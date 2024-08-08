@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+<!--Масиви    -->
+let arr = [34, 765, 'Olga', true, false, '453', 654, 'Svitlana', 100400, '6546'];
+console.log(arr);
+console.log(arr.length);
+console.log(arr[2]);
+console.log(arr[4]);
+arr[0] = 765;
+console.log(arr);
+arr[arr.length] = 'petro';
+console.log(arr);
+// ----------------
+let book1 = {
+    title: 'Aladin',
+    pageCount: 178,
+    genre: 'kazka',
+};
+let book2 = {
+    title: 'Gary Potter',
+    pageCount: 786,
+    genre: 'fantasy',
+};
+let book3 = {
+    title: 'Namber',
+    pageCount: 564,
+    genre: 'psyhology',
+};
+
+console.log(book1);
+console.log(book2.genre);
+console.log(book3.title);
+// ----------------
+let book4 = {
+    title: 'Aladin',
+    pageCount: 178,
+    genre: 'kazka',
+    authors: [
+        {name: 'Vasia', age: 34},
+        ]
+};
+let book5 = {
+    title: 'Ghtreu',
+    pageCount: 564,
+    genre: 'hjtre',
+    authors: [
+        {name: 'Vova', age: 47},
+    ]
+};
+let book6 = {
+    title: 'Jhytf',
+    pageCount: 654,
+    genre: 'jhyt',
+    authors: [
+        {name: 'Sahsa', age: 32},
+    ]
+};
+console.log(book4);
+console.log(book5.authors[0].age);
+// ----------------
+let user = [
+    {name: 'Petya', username: 'Oker', password: 453},
+    {name: 'Kolia', username: 'Hjyt', password: 987},
+    {name: 'Tania', username: 'Ftre', password: 651},
+    {name: 'Olga', username: 'Nhfr', password: 894},
+    {name: 'Vira', username: 'Cfdr', password: 444},
+    {name: 'Oleg', username: 'Jbcd', password: 657},
+    {name: 'Viktor', username: 'Vftr', password: 112},
+    {name: 'Mila', username: 'Fres', password: 235},
+    {name: 'Ira', username: 'Kuyf', password: 914},
+    {name: 'Sonia', username: 'Bgyf', password: 693},
+]
+console.log(user[0].password);
+console.log(user[1].password);
+console.log(user[2].password);
+console.log(user[3].password);
+console.log(user[4].password);
+console.log(user[5].password);
+console.log(user[6].password);
+console.log(user[7].password);
+console.log(user[8].password);
+console.log(user[9].password);
+// ----------------
+let temperature = [
+    {day: 'Monday', morning: 10, noon: 14, evening: 17},
+    {day: 'Tuesday', morning: 11, noon: 15, evening: 14},
+    {day: 'Wednesday', morning: 13, noon: 16, evening: 17},
+    {day: 'Thursday', morning: 10, noon: 12, evening: 19},
+    {day: 'Friday', morning: 15, noon: 14, evening: 15},
+    {day: 'Saturday', morning: 14, noon: 14, evening: 11},
+    {day: 'Sunday', morning: 13, noon: 14, evening: 14},
+]
+console.log(temperature[0]);
+console.log(temperature[1]);
+console.log(temperature[2]);
+console.log(temperature[3]);
+console.log(temperature[4]);
+console.log(temperature[5]);
+console.log(temperature[6]);
+
+<!--Логічні розгалуження    -->
+let x = -3;
+if (x!==0) {
+    console.log('Вірно');
+} else {
+    console.log('Не вірно');
+}
+// ----------------
+let time = 20;
+if (time>=0 && time <=15) {
+    console.log('Перша четверть');
+} else if (time>=16 && time<=30) {
+    console.log('Друга четверть');
+} else if (time>=31 && time<=45) {
+    console.log('Третя четверть');
+} else if (time>=46 && time <=59) {
+    console.log('Четверта четверть');
+}
+// ----------------
+let day = 24;
+if (day>=1 && day<=10) {
+    console.log('Перша декада');
+    }else if (day>=11 && day<=20) {
+    console.log('Друга декада');
+}else if (day>=21 && day <=31) {
+    console.log('Третя декада');
+}
+// ----------------
+let dayNamber = 7;
+switch (dayNamber) {
+    case 1:
+    console.log('Monday');
+    break;
+    case 2:
+        console.log('Tuesday');
+        break;
+    case 3:
+        console.log('Wednesday');
+        break;
+    case 4:
+        console.log('Thursday');
+        break;
+    case 5:
+        console.log('Friday');
+        break;
+    case 6:
+        console.log('Saturday');
+        break;
+    case 7:
+        console.log('Sunday');
+        break;
+}
+// ----------------
+let a = 45;
+let b = 97;
+if (a>b) {
+    console.log(a);
+}else if (a<b) {
+    console.log(b);
+}else {
+    console.log('Числа рівні');
+}
+// ----------------
+let c = 2;
+if (true) {
+    console.log('good');
+}else {
+    console.log('default');
+}
+// ----------------
+let coursesAndDurationArray = [
+    {title: 'JavaScript Complex', monthDuration: 5},
+    {title: 'Java Complex', monthDuration: 6},
+    {title: 'Python Complex', monthDuration: 6},
+    {title: 'QA Complex', monthDuration: 4},
+    {title: 'FullStack', monthDuration: 7},
+    {title: 'Frontend', monthDuration: 4}
+];
+if (coursesAndDurationArray[0].monthDuration>5) {
+    console.log('Супер');
+}
+if (coursesAndDurationArray[1].monthDuration>5) {
+    console.log('Супер');
+}
+if (coursesAndDurationArray[2].monthDuration>5) {
+    console.log('Супер');
+}
+if (coursesAndDurationArray[3].monthDuration>5) {
+    console.log('Супер');
+}
+if (coursesAndDurationArray[4].monthDuration>5) {
+    console.log('Супер');
+}
+if (coursesAndDurationArray[5].monthDuration>5) {
+    console.log('Супер');
+}
+
+
+
+</script>
+</body>
+</html>
