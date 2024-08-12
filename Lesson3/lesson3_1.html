@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // - є масив [2,17,13,6,22,31,45,66,100,-18] :
+    // 1. перебрати його циклом while
+
+let add = [2,17,13,6,22,31,45,66,100,-18];
+let i = 0;
+while (i < add.length) {
+    console.log(add[i]);
+
+i++;
+}
+// ----------------2. перебрати його циклом for
+let add1 = [2,17,13,6,22,31,45,66,100,-18];
+for (let a = 0; a <add1.length; a++) {
+    console.log(add1[a]);
+}
+// ----------------перебрати циклом while та вивести  числа тільки з непарним індексом
+let add2 = [2,17,13,6,22,31,45,66,100,-18];
+
+let b = 0;
+while (b <add2.length) {
+    if (add2[b] % 2 == 1) {
+        console.log(add[b]);
+    }
+
+    b++
+}
+// ---------------- перебрати циклом for та вивести  числа тільки з парним індексом
+let add3 = [2,17,13,6,22,31,45,66,100,-18];
+for (let c = 0; c < add3.length; c++) {
+    if (add3[c] % 2 == 0) {
+        console.log(add[c]);
+    }
+}
+// ----------------замінити кожне число кратне 3 на слово "okten"
+let add4 = [2,17,13,6,22,31,45,66,100,-18];
+for (let d = 0; d < add4.length; d++) {
+    if (add4[d] % 3 == 0) {
+        add4[d] = 'okten';
+    }
+   }
+console.log(add4);
+// ----------------вивести масив в зворотньому порядку.
+let add5 = [2,17,13,6,22,31,45,66,100,-18];
+for (let f = add5.length - 1; f >= 0; f--) {
+    console.log(add5[f]);
+}
+// ----------------Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
+let arr2 = [10, 3, 456, 45, 8, 7644, 54, 98, 5, 111];
+for (arrs2 of arr2) {
+    console.log(arrs2);
+}
+// ----------------Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
+let arr3 = ['Ivan', 'Olga', 'Petro', 'Oleksander', 'Tetiana', 'Roman', 'Vasia', 'Igop', 'Polina', 'Alina'];
+for (arrs3 of arr3) {
+    console.log(arrs3);
+}
+// ----------------Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
+let arr4 = [7, 'Tetiana', true, 654, 876, false, 'Petro', 76, 87543, 'Olga'];
+for (arrs4 of arr4) {
+    console.log(arrs4);
+}
+// ----------------Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
+
+let arr5 = [false, 'Tetiana', true, 654, 876, false, 'Petro', 76, true, 'Olga'];
+for (let t = 0; t < arr5.length; t++) {
+    if (typeof arr5[t] === "boolean") {
+        console.log(arr5[t]);
+    }
+}
+// ----------------Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
+let arr6 = [false, 'Tetiana', true, 654, 876, false, 'Petro', 76, true, 'Olga'];
+
+for (let p = 0; p < arr6.length; p++) {
+    if (typeof arr6[p] === "number") {
+        console.log(arr6[p]);
+    }
+}
+// ----------------Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи
+let arr7 = [false, 'Tetiana', true, 654, 876, false, 'Petro', 76, true, 'Olga'];
+
+for (let r = 0; r < arr7.length; r++) {
+    if (typeof arr7[r] === "string") {
+        console.log(arr7[r]);
+    }
+}
+// ----------------Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
+let arr8 = [false, 'Tetiana', true, 654, 876, false, 'Petro', 76, true, 'Olga'];
+let arr9 = [];
+
+for (let s = 0; s < arr8.length; s++) {
+    arr9[s] = arr8[s];
+    console.log(arr9[s]);
+}
+// ----------------Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+for (let v = 0; v < 10; v++) {
+    document.write(`${v}`)
+    console.log(v);
+}
+// ----------------Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+for (let v = 0; v < 100; v++) {
+    document.write(`${v}`)
+    console.log(v);
+}
+// ----------------Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+for (let v = 0; v < 100; v=v+2) {
+    document.write(`${v}`)
+    console.log(v);
+}
+// ---------------- Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+for (let v = 0; v < 100; v++) {
+    if (v % 2 == 0) {
+        document.write(`${v}`)
+        console.log(v);
+    }
+
+
+}
+// ----------------Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
+for (let v = 0; v < 100; v++) {
+    if (v % 2 == 1) {
+        document.write(`${v}`)
+        console.log(v);
+    }
+}
+// ----------------
+//     1. Створити пустий масив та :
+//         a. заповнити його 50 парними числами за допомоги циклу.
+
+    let arr10 = [];
+    for (let j = 2; j <= 100; j = j + 2) {
+        arr10.push(j);
+        console.log(arr10);
+    }
+
+
+    // ---------------- 1. Створити пустий масив та : b. заповнити його 50 непарними числами за допомоги циклу.
+    let arr11 = [];
+    for (let m = 1; m <= 100; m=m+2) {
+        arr11.push(m);
+        console.log(arr11);
+        }
+    // ----------------
+
+
+
+
+
+</script>
+</body>
+</html>
